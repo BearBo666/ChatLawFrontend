@@ -16,7 +16,7 @@ services:
       - "18080:8080"
     volumes:
       - "frontend_log:/var/log"
-    image: "panda1024/chatlaw:v0.0.1"
+    image: "panda1024/chatlaw-frontend:v0.0.1"
     restart: always
     networks:
       - chatlaw-network
