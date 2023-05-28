@@ -62,7 +62,7 @@ export const Banner = () => {
                     <div className="title">
                       {`您最忠实的AI法律顾问`}
                     </div>
-                    <p>但愿世间不纷争，何惜法典卷生尘!</p>
+                    <p>但愿世间不纷争，何惜法典卷生尘。</p>
 
                     <Stack direction="horizontal" gap={5} className="col-md-6 mx-auto customize-stack">
                       <button className="vvd">Play Video</button>
