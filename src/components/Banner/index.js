@@ -1,17 +1,8 @@
-/*
- * @Author: curechen 981470148@qq.com
- * @Date: 2023-05-25 09:42:16
- * @LastEditors: curechen 981470148@qq.com
- * @LastEditTime: 2023-05-25 15:08:05
- * @FilePath: \workplace\React\web-dev-projects\personal-portfolio\src\components\Banner.js
- * @Description: 
- */
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
 import Stack from 'react-bootstrap/Stack';
-import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
+import './index.css'
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
@@ -58,40 +49,29 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <Container>
+      <Container id="home">
         <Row>
           <Col xs={12} md={12} xl={12}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  {/* <span className="tagline">Welcome to my Portfolio</span> */}
                   <div className="center">
                     <div className="cover">
                       ChatLaw
                     </div>
                     <div className="title">
-
                       {`您最忠实的AI法律顾问`}
-                      {/* <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span> */}
                     </div>
-                    <p>You can enjoy RV Sites for all sizes of campers andmotorhomes, as well as, our fully equipped cottages!</p>
+                    <p>但愿世间不纷争，何惜法典卷生尘。</p>
 
                     <Stack direction="horizontal" gap={5} className="col-md-6 mx-auto customize-stack">
-                      <button className="vvd">Demo</button>
-                      <a href="#connect"><button className="vvd">Contact</button></a>
+                      <button className="vvd">Play Video</button>
+                      <a href="#connect"><button className="vvd">Join Waitlist</button></a>
                     </Stack>
                   </div>
                 </div>}
             </TrackVisibility>
           </Col>
-          {/* <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>}
-            </TrackVisibility>
-          </Col> */}
         </Row>
       </Container>
     </section>

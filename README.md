@@ -1,36 +1,50 @@
-# Personal Portfolio Website in React
+# ChatLaw Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project setup
 
-<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="https://user-images.githubusercontent.com/50160672/174933373-1ba6cadf-1c9a-48c3-aa58-984d0bd62d82.png">
+```
+npm install
+```
 
-Built using:
+### Compiles and hot-reloads for development
 
-- Front-end library: React
-- CSS framework: React-bootstrap
-- CSS animations library: Animate.css
+```
+npm run start
+```
 
-In the /personal-portfolio, you can run:
+### Compiles and minifies for production
 
-### `npm start`
+```
+npm run build
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Run your unit tests
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+npm run test:unit
+```
 
-### `npm test`
+### Lints and fixes files
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm run lint
+```
 
-### `npm run build`
+### Customize configuration
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+See [Configuration Reference](https://cli.vuejs.org/config/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+
+
+# Deploy(还没改)
+
+To deploy run the following
+
+- Run `./build.sh`
+- Tag the latest build to a specific version `docker tag copernicus-frontend:latest docker.mirav.cn:5000/copernicus-frontend:vx.x`
+- Push the image to registry with `docker push docker.mirav.cn:5000/copernicus-frontend:vx.x`
+
+The `docker-compose.yml` is located at the `copernicus-backend`. Please make the corresponding changes there.
+

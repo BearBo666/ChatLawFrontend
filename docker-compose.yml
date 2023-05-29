@@ -1,0 +1,22 @@
+version: "3.8"
+
+networks:
+  chatlaw-network:
+    driver: bridge
+
+volumes:
+  frontend_log:
+
+services:
+  chatlaw-frontend:
+    container_name: chatlaw-frontend
+    expose:
+      - 8080
+    ports:
+      - "18080:8080"
+    volumes:
+      - "frontend_log:/var/log"
+    image: "panda1024/chatlaw-frontend:v0.0.1"
+    restart: always
+    networks:
+      - chatlaw-network
